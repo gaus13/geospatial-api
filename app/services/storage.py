@@ -6,7 +6,7 @@
 # File handling is an input-security boundary and must be isolated from parsing
 # and database code.
 from __future__ import annotations
-import shutil
+
 from pathlib import Path
 from uuid import UUID
 from zipfile import BadZipFile, ZipFile
@@ -53,7 +53,7 @@ async def save_upload(upload: UploadFile, file_id: UUID) -> Path:
                     f"{settings.max_upload_mb} MB"
                 )  
               
-            output_file.write(chunk)
+                output_file.write(chunk)
 
     finally:
         await upload.close()
