@@ -55,29 +55,37 @@ def compute_measurements(gdf: gpd.GeoDataFrame) -> MeasurementResult:
     """Calculate metric measurements for features in a GeoDataFrame."""
 
     if gdf.crs is None:
-        raise MissingCRSError("Input data has no coordiante reference system.")
+        raise MissingCRSError("Input data has no coordinate reference system.")
 
     if gdf.empty:
         raise FileProcessingError("File contains no features.")
 
     source_crs = _crs_label(gdf.crs)
 
-    # Normalize the data to longitude/latitude before selecting a UTM zone.
-    geographic = gdf.to_crs("EPSG:4326")
-
-    # Select a local projected CRS whose units are metres.
-    metric_crs = geographic.estimate_utm_crs()
-
-    if metric_crs is None:
-        raise FileProcessingError(
-            "Unable to select a projected CRS for measurement."
-        )
-    
-    metric = gdf.to_crs(metric_crs)
-    measurement_crs = _crs_label(metric_crs)
-
     # This creates JSON-safe geometries and properties for API responses.
     source_features = json.loads(gdf.to_json(drop_id=True))["features"]
+
+    non_empty = gdf.geometry.apply(
+        lambda geometry: geometry is not None and not geometry.is_empty
+    )
+
+    if non_empty.any():
+        # Normalize the data to longitude/latitude before selecting a UTM zone.
+        geographic = gdf.loc[non_empty].to_crs("EPSG:4326")
+
+        # Select a local projected CRS whose units are metres.
+        metric_crs = geographic.estimate_utm_crs()
+
+        if metric_crs is None:
+            raise FileProcessingError(
+                "Unable to select a projected CRS for measurement."
+            )
+
+        metric = gdf.to_crs(metric_crs)
+        measurement_crs = _crs_label(metric_crs)
+    else:
+        metric = gdf
+        measurement_crs = source_crs
 
     results: list[FeatureResult] = []
 
