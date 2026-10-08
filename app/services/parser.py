@@ -21,9 +21,9 @@ def _find_shapefile(extracted_directory: Path) -> Path:
     """Find exactly one Shapefile while ignoring macOS metadata folders."""
 
     shapefiles = [
-        Path
+        path
         for path in extracted_directory.rglob("*.shp")
-        if "_MACOSX" not in path.parts
+        if "__MACOSX" not in path.parts
     ]
 
     if not shapefiles:
