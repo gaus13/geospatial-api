@@ -1,0 +1,21 @@
+# Web framework and server
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# Geospatial processing
+geopandas==1.0.1
+pyogrio==0.10.0
+shapely==2.0.7
+pyproj==3.7.0
+
+# Configuration, database, and PostGIS
+pydantic==2.10.5
+pydantic-settings==2.7.1
+sqlalchemy==2.0.37
+geoalchemy2==0.17.1
+psycopg2-binary==2.9.10
+
+# Testing
+pytest==8.3.4
+httpx==0.28.1
