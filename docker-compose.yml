@@ -21,6 +21,7 @@ services:
       dockerfile: Dockerfile
     environment:
       DATABASE_URL: postgresql+psycopg2://geo_user:geo_password@db:5432/geospatial
+      TEST_DATABASE_URL: postgresql+psycopg2://geo_user:geo_password@db:5432/geospatial
       MAX_UPLOAD_MB: 50
       UPLOAD_DIR: /app/uploads
     ports:

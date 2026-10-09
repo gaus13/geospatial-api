@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+   <Document>
+      <name>AA</name>
+      <description>Routeing Guide Map Publication</description>
+      <Style id="interchangeLocationStyle">
+         <IconStyle>
+            <Icon>
+               <href>interchange.gif</href>
+            </Icon>
+         </IconStyle>
+         <BalloonStyle>
+            <bgColor>00664422</bgColor>
+            <textColor>fffffff</textColor>
+            <text> $[name]</text>
+         </BalloonStyle>
+      </Style>
+      <Style id="routeingPointLocationStyle">
+         <IconStyle>
+            <Icon>
+               <href>routeing-point.gif</href>
+            </Icon>
+         </IconStyle>
+         <BalloonStyle>
+            <bgColor>00664422</bgColor>
+            <textColor>fffffff</textColor>
+            <text> $[name]</text>
+         </BalloonStyle>
+         <LabelStyle>
+            <scale>1</scale>
+            <color>ffffffff</color>
+            <colorMode>normal</colorMode>
+         </LabelStyle>
+      </Style>
+      <Style id="routingGroupLocationStyle">
+         <IconStyle>
+            <Icon>
+               <href>routeing-group.gif</href>
+            </Icon>
+         </IconStyle>
+         <BalloonStyle>
+            <bgColor>00664422</bgColor>
+            <textColor>fffffff</textColor>
+            <text> $[name]</text>
+         </BalloonStyle>
+      </Style>
+      <Style id="linkStyle">
+         <LineStyle>
+            <color>ff0000ff</color>
+            <width>4</width>
+         </LineStyle>
+         <BalloonStyle>
+            <bgColor>00664422</bgColor>
+            <textColor>ffe11901</textColor>
+            <text> $[name]</text>
+         </BalloonStyle>
+      </Style>
+      <Placemark>
+         <name>DINGWALL</name>
+         <description>DINGWALL (DIN) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-4.42110081313562,57.592267576863</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>INVERNESS</name>
+         <description>INVERNESS (INV) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-4.22168553197048,57.4781575680485</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>SEVEN SISTRS UND</name>
+         <description>SEVEN SISTRS UND (SVS) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.0730126474042903,51.5815809260148</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>CHESHUNT</name>
+         <description>CHESHUNT (CHN) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.0216581211012142,51.7002772853904</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>PETERBOROUGH</name>
+         <description>PETERBOROUGH (PBO) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.248295800076136,52.5721744409554</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>LINCOLN</name>
+         <description>LINCOLN (LCN) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.539408227391042,53.2241839046206</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>DONCASTER</name>
+         <description>DONCASTER (DON) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.13871721870229,53.5185314624258</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>YORK</name>
+         <description>YORK (YRK) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.09164414482499,53.9549944344078</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>DUNDEE</name>
+         <description>DUNDEE (DEE) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-2.98647708050388,56.4503497727745</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>LADYBANK</name>
+         <description>LADYBANK (LDY) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.12075070040537,56.2712433727159</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>GLENROTHES</name>
+         <description>GLENROTHES (GLT) - INTERCHANGE</description>
+         <styleUrl>#interchangeLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.14165226352735,56.1595983102409</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>NORTHALLERTON</name>
+         <description>NORTHALLERTON (NTR) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.44020006264227,54.3301128769982</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>MOTHERWELL GROUP</name>
+         <description>MOTHERWELL GROUP (G67) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.99374336471782,55.7892042237234</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>CARSTAIRS</name>
+         <description>CARSTAIRS (CRS) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.66719660940652,55.6879970200404</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>SLEAFORD</name>
+         <description>SLEAFORD (SLR) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.408661580477448,52.9924033599123</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>GRANTHAM</name>
+         <description>GRANTHAM (GRA) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.64092361498438,52.9036052752164</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>INVERKEITHING GROUP</name>
+         <description>INVERKEITHING GROUP (G50) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.39468834148053,56.0320609246806</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>STIRLING</name>
+         <description>STIRLING (STG) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.93342054431657,56.1164857646184</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>PERTH</name>
+         <description>PERTH (PTH) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.43853486400658,56.3902039890477</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>FALKIRK GROUP</name>
+         <description>FALKIRK GROUP (G44) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.7907706980682,55.9891919882658</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>EDINBURGH GROUP</name>
+         <description>EDINBURGH GROUP (G11) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.1867201601368,55.9497469450646</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>LEEDS GROUP</name>
+         <description>LEEDS GROUP (G16) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.54758683544322,53.7922040754631</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>WAKEFIELD GROUP</name>
+         <description>WAKEFIELD GROUP (G30) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.48675885897802,53.6760184399997</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>BERWICK ON TWEED</name>
+         <description>BERWICK ON TWEED (BWK) - INTERCHANGE</description>
+         <styleUrl>#interchangeLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-2.00956507175765,55.7721143202125</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>TOTTENHAM HALE</name>
+         <description>TOTTENHAM HALE (TOM) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.0583956949249829,51.5858343313731</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>NEWCASTLE</name>
+         <description>NEWCASTLE (NCL) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.61572906780496,54.9653249022215</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>HARTLEPOOL</name>
+         <description>HARTLEPOOL (HPL) - INTERCHANGE</description>
+         <styleUrl>#interchangeLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.20575407723747,54.6838167251177</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>SCARBOROUGH GROUP</name>
+         <description>SCARBOROUGH GROUP (G48) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.404114952496297,54.2768123775554</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>KIRKCALDY</name>
+         <description>KIRKCALDY (KDY) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.16591335708558,56.1099364212259</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>NORWICH</name>
+         <description>NORWICH (NRW) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>1.30845643744413,52.6243046775948</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>ELY</name>
+         <description>ELY (ELY) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>0.267644038588302,52.3881214751547</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>AVIEMORE</name>
+         <description>AVIEMORE (AVM) - INTERCHANGE</description>
+         <styleUrl>#interchangeLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-3.82682091769454,57.1869447311107</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>CAMBRIDGE</name>
+         <description>CAMBRIDGE (CBG) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>0.139110387067273,52.1918581729905</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>SELBY</name>
+         <description>SELBY (SBY) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.06202765621019,53.7804012865994</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>CLAPTON</name>
+         <description>CLAPTON (CPT) - INTERCHANGE</description>
+         <styleUrl>#interchangeLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.055180010443115,51.5597137219714</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>RETFORD</name>
+         <description>RETFORD (RET) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.946208578834308,53.3129622458949</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>MIDDLESBROUGH GROUP</name>
+         <description>MIDDLESBROUGH GROUP (G42) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.2310576583881,54.5761261486276</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>DARLINGTON</name>
+         <description>DARLINGTON (DAR) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.54578731766567,54.5174993504893</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>HACKNEY DOWNS</name>
+         <description>HACKNEY DOWNS (HAC) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.0586375574298068,51.546287887249</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>NEWARK GROUP</name>
+         <description>NEWARK GROUP (G47) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.798130010834015,53.0796689798256</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>CARLISLE</name>
+         <description>CARLISLE (CAR) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-2.93233811859765,54.8877581794713</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>LONDON GROUP</name>
+         <description>LONDON GROUP (G01) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.133035511350118,51.5259228426492</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>STRATFORD LONDON GP</name>
+         <description>STRATFORD LONDON GP (G74) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-0.00273806485052959,51.5381583521958</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>STANSTED GROUP</name>
+         <description>STANSTED GROUP (G66) - ROUTEING_GROUP</description>
+         <styleUrl>#routingGroupLocationStyle</styleUrl>
+         <Point>
+            <coordinates>0.30340061061354,51.8876210475587</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>DURHAM</name>
+         <description>DURHAM (DHM) - INTERCHANGE</description>
+         <styleUrl>#interchangeLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-1.58020598133438,54.7764673142649</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>NEWTON LANARK</name>
+         <description>NEWTON LANARK (NTN) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-4.13242975572459,55.8165428999123</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>ABERDEEN</name>
+         <description>ABERDEEN (ABD) - ROUTEING_POINT</description>
+         <styleUrl>#routeingPointLocationStyle</styleUrl>
+         <Point>
+            <coordinates>-2.09584835709385,57.1408810902915</coordinates>
+         </Point>
+      </Placemark>
+      <Placemark>
+         <name>DINGWALL - INVERNESS</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-4.42110081313562,57.592267576863
+-4.22168553197048,57.4781575680485</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>SEVEN SISTRS UND - CHESHUNT</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0730126474042903,51.5815809260148
+-0.0216581211012142,51.7002772853904</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>PETERBOROUGH - LINCOLN</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.248295800076136,52.5721744409554
+-0.539408227391042,53.2241839046206</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DONCASTER - YORK</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.13871721870229,53.5185314624258
+-1.09164414482499,53.9549944344078</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DUNDEE - LADYBANK</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-2.98647708050388,56.4503497727745
+-3.12075070040537,56.2712433727159</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LADYBANK - GLENROTHES</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.12075070040537,56.2712433727159
+-3.14165226352735,56.1595983102409</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NORTHALLERTON - YORK</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.44020006264227,54.3301128769982
+-1.09164414482499,53.9549944344078</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>MOTHERWELL GROUP - CARSTAIRS</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.99374336471782,55.7892042237234
+-3.66719660940652,55.6879970200404</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>SLEAFORD - GRANTHAM</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.408661580477448,52.9924033599123
+-0.64092361498438,52.9036052752164</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>INVERKEITHING GROUP - GLENROTHES</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.39468834148053,56.0320609246806
+-3.14165226352735,56.1595983102409</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>STIRLING - PERTH</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.93342054431657,56.1164857646184
+-3.43853486400658,56.3902039890477</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>FALKIRK GROUP - EDINBURGH GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.7907706980682,55.9891919882658
+-3.1867201601368,55.9497469450646</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LEEDS GROUP - WAKEFIELD GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.54758683544322,53.7922040754631
+-1.48675885897802,53.6760184399997</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>BERWICK ON TWEED - EDINBURGH GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-2.00956507175765,55.7721143202125
+-3.1867201601368,55.9497469450646</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>TOTTENHAM HALE - CHESHUNT</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0583956949249829,51.5858343313731
+-0.0216581211012142,51.7002772853904</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NEWCASTLE - HARTLEPOOL</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.61572906780496,54.9653249022215
+-1.20575407723747,54.6838167251177</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>SCARBOROUGH GROUP - YORK</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.404114952496297,54.2768123775554
+-1.09164414482499,53.9549944344078</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LADYBANK - KIRKCALDY</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.12075070040537,56.2712433727159
+-3.16591335708558,56.1099364212259</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NORWICH - ELY</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>1.30845643744413,52.6243046775948
+0.267644038588302,52.3881214751547</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>INVERNESS - AVIEMORE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-4.22168553197048,57.4781575680485
+-3.82682091769454,57.1869447311107</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CHESHUNT - TOTTENHAM HALE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0216581211012142,51.7002772853904
+-0.0583956949249829,51.5858343313731</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DONCASTER - LINCOLN</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.13871721870229,53.5185314624258
+-0.539408227391042,53.2241839046206</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>ELY - CAMBRIDGE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>0.267644038588302,52.3881214751547
+0.139110387067273,52.1918581729905</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>SELBY - DONCASTER</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.06202765621019,53.7804012865994
+-1.13871721870229,53.5185314624258</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LEEDS GROUP - YORK</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.54758683544322,53.7922040754631
+-1.09164414482499,53.9549944344078</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>EDINBURGH GROUP - BERWICK ON TWEED</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.1867201601368,55.9497469450646
+-2.00956507175765,55.7721143202125</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>TOTTENHAM HALE - CLAPTON</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0583956949249829,51.5858343313731
+-0.055180010443115,51.5597137219714</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>INVERKEITHING GROUP - KIRKCALDY</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.39468834148053,56.0320609246806
+-3.16591335708558,56.1099364212259</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>SLEAFORD - LINCOLN</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.408661580477448,52.9924033599123
+-0.539408227391042,53.2241839046206</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LINCOLN - DONCASTER</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.539408227391042,53.2241839046206
+-1.13871721870229,53.5185314624258</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CARSTAIRS - EDINBURGH GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.66719660940652,55.6879970200404
+-3.1867201601368,55.9497469450646</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>RETFORD - DONCASTER</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.946208578834308,53.3129622458949
+-1.13871721870229,53.5185314624258</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>MIDDLESBROUGH GROUP - DARLINGTON</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.2310576583881,54.5761261486276
+-1.54578731766567,54.5174993504893</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>SLEAFORD - PETERBOROUGH</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.408661580477448,52.9924033599123
+-0.248295800076136,52.5721744409554</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>SEVEN SISTRS UND - HACKNEY DOWNS</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0730126474042903,51.5815809260148
+-0.0586375574298068,51.546287887249</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>PETERBOROUGH - SLEAFORD</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.248295800076136,52.5721744409554
+-0.408661580477448,52.9924033599123</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>PERTH - STIRLING</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.43853486400658,56.3902039890477
+-3.93342054431657,56.1164857646184</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CHESHUNT - SEVEN SISTRS UND</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0216581211012142,51.7002772853904
+-0.0730126474042903,51.5815809260148</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CLAPTON - HACKNEY DOWNS</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.055180010443115,51.5597137219714
+-0.0586375574298068,51.546287887249</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LINCOLN - NEWARK GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.539408227391042,53.2241839046206
+-0.798130010834015,53.0796689798256</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>ELY - PETERBOROUGH</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>0.267644038588302,52.3881214751547
+-0.248295800076136,52.5721744409554</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CARSTAIRS - CARLISLE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.66719660940652,55.6879970200404
+-2.93233811859765,54.8877581794713</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LONDON GROUP - STRATFORD LONDON GP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.133035511350118,51.5259228426492
+-0.00273806485052959,51.5381583521958</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>KIRKCALDY - LADYBANK</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.16591335708558,56.1099364212259
+-3.12075070040537,56.2712433727159</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NORTHALLERTON - DARLINGTON</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.44020006264227,54.3301128769982
+-1.54578731766567,54.5174993504893</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>STANSTED GROUP - CAMBRIDGE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>0.30340061061354,51.8876210475587
+0.139110387067273,52.1918581729905</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>EDINBURGH GROUP - CARSTAIRS</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.1867201601368,55.9497469450646
+-3.66719660940652,55.6879970200404</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>AVIEMORE - PERTH</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.82682091769454,57.1869447311107
+-3.43853486400658,56.3902039890477</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>HACKNEY DOWNS - LONDON GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0586375574298068,51.546287887249
+-0.133035511350118,51.5259228426492</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CARLISLE - CARSTAIRS</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-2.93233811859765,54.8877581794713
+-3.66719660940652,55.6879970200404</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>FALKIRK GROUP - STIRLING</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.7907706980682,55.9891919882658
+-3.93342054431657,56.1164857646184</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>WAKEFIELD GROUP - LEEDS GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.48675885897802,53.6760184399997
+-1.54758683544322,53.7922040754631</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>YORK - DONCASTER</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.09164414482499,53.9549944344078
+-1.13871721870229,53.5185314624258</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LINCOLN - PETERBOROUGH</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.539408227391042,53.2241839046206
+-0.248295800076136,52.5721744409554</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>HARTLEPOOL - MIDDLESBROUGH GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.20575407723747,54.6838167251177
+-1.2310576583881,54.5761261486276</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>BERWICK ON TWEED - NEWCASTLE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-2.00956507175765,55.7721143202125
+-1.61572906780496,54.9653249022215</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CLAPTON - TOTTENHAM HALE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.055180010443115,51.5597137219714
+-0.0583956949249829,51.5858343313731</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>STANSTED GROUP - CHESHUNT</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>0.30340061061354,51.8876210475587
+-0.0216581211012142,51.7002772853904</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NORTHALLERTON - MIDDLESBROUGH GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.44020006264227,54.3301128769982
+-1.2310576583881,54.5761261486276</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>KIRKCALDY - GLENROTHES</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.16591335708558,56.1099364212259
+-3.14165226352735,56.1595983102409</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DURHAM - NEWCASTLE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.58020598133438,54.7764673142649
+-1.61572906780496,54.9653249022215</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>EDINBURGH GROUP - FALKIRK GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.1867201601368,55.9497469450646
+-3.7907706980682,55.9891919882658</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>HACKNEY DOWNS - CLAPTON</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0586375574298068,51.546287887249
+-0.055180010443115,51.5597137219714</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>STRATFORD LONDON GP - LONDON GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.00273806485052959,51.5381583521958
+-0.133035511350118,51.5259228426492</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>GLENROTHES - LADYBANK</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.14165226352735,56.1595983102409
+-3.12075070040537,56.2712433727159</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>ELY - NORWICH</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>0.267644038588302,52.3881214751547
+1.30845643744413,52.6243046775948</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NEWARK GROUP - GRANTHAM</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.798130010834015,53.0796689798256
+-0.64092361498438,52.9036052752164</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>HARTLEPOOL - NEWCASTLE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.20575407723747,54.6838167251177
+-1.61572906780496,54.9653249022215</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>YORK - LEEDS GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.09164414482499,53.9549944344078
+-1.54758683544322,53.7922040754631</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>PETERBOROUGH - GRANTHAM</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.248295800076136,52.5721744409554
+-0.64092361498438,52.9036052752164</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>STIRLING - FALKIRK GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.93342054431657,56.1164857646184
+-3.7907706980682,55.9891919882658</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DARLINGTON - MIDDLESBROUGH GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.54578731766567,54.5174993504893
+-1.2310576583881,54.5761261486276</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>GLENROTHES - KIRKCALDY</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.14165226352735,56.1595983102409
+-3.16591335708558,56.1099364212259</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CAMBRIDGE - ELY</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>0.139110387067273,52.1918581729905
+0.267644038588302,52.3881214751547</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LINCOLN - RETFORD</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.539408227391042,53.2241839046206
+-0.946208578834308,53.3129622458949</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>TOTTENHAM HALE - STRATFORD LONDON GP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0583956949249829,51.5858343313731
+-0.00273806485052959,51.5381583521958</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>RETFORD - LINCOLN</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.946208578834308,53.3129622458949
+-0.539408227391042,53.2241839046206</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CHESHUNT - STANSTED GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0216581211012142,51.7002772853904
+0.30340061061354,51.8876210475587</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>SELBY - YORK</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.06202765621019,53.7804012865994
+-1.09164414482499,53.9549944344078</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>KIRKCALDY - INVERKEITHING GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.16591335708558,56.1099364212259
+-3.39468834148053,56.0320609246806</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>PETERBOROUGH - ELY</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.248295800076136,52.5721744409554
+0.267644038588302,52.3881214751547</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DONCASTER - WAKEFIELD GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.13871721870229,53.5185314624258
+-1.48675885897802,53.6760184399997</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>EDINBURGH GROUP - INVERKEITHING GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.1867201601368,55.9497469450646
+-3.39468834148053,56.0320609246806</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DARLINGTON - DURHAM</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.54578731766567,54.5174993504893
+-1.58020598133438,54.7764673142649</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>HACKNEY DOWNS - SEVEN SISTRS UND</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.0586375574298068,51.546287887249
+-0.0730126474042903,51.5815809260148</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>RETFORD - NEWARK GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.946208578834308,53.3129622458949
+-0.798130010834015,53.0796689798256</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CAMBRIDGE - STANSTED GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>0.139110387067273,52.1918581729905
+0.30340061061354,51.8876210475587</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>AVIEMORE - INVERNESS</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.82682091769454,57.1869447311107
+-4.22168553197048,57.4781575680485</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>GRANTHAM - NEWARK GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.64092361498438,52.9036052752164
+-0.798130010834015,53.0796689798256</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>MOTHERWELL GROUP - NEWTON LANARK</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.99374336471782,55.7892042237234
+-4.13242975572459,55.8165428999123</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NEWCASTLE - BERWICK ON TWEED</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.61572906780496,54.9653249022215
+-2.00956507175765,55.7721143202125</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>WAKEFIELD GROUP - DONCASTER</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.48675885897802,53.6760184399997
+-1.13871721870229,53.5185314624258</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>GLENROTHES - INVERKEITHING GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.14165226352735,56.1595983102409
+-3.39468834148053,56.0320609246806</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LINCOLN - SLEAFORD</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.539408227391042,53.2241839046206
+-0.408661580477448,52.9924033599123</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>YORK - NORTHALLERTON</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.09164414482499,53.9549944344078
+-1.44020006264227,54.3301128769982</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CARLISLE - NEWCASTLE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-2.93233811859765,54.8877581794713
+-1.61572906780496,54.9653249022215</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>MIDDLESBROUGH GROUP - HARTLEPOOL</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.2310576583881,54.5761261486276
+-1.20575407723747,54.6838167251177</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DURHAM - DARLINGTON</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.58020598133438,54.7764673142649
+-1.54578731766567,54.5174993504893</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>CARSTAIRS - MOTHERWELL GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.66719660940652,55.6879970200404
+-3.99374336471782,55.7892042237234</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DONCASTER - SELBY</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.13871721870229,53.5185314624258
+-1.06202765621019,53.7804012865994</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NEWARK GROUP - RETFORD</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.798130010834015,53.0796689798256
+-0.946208578834308,53.3129622458949</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>YORK - SCARBOROUGH GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.09164414482499,53.9549944344078
+-0.404114952496297,54.2768123775554</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NEWCASTLE - CARLISLE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.61572906780496,54.9653249022215
+-2.93233811859765,54.8877581794713</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DUNDEE - ABERDEEN</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-2.98647708050388,56.4503497727745
+-2.09584835709385,57.1408810902915</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LADYBANK - DUNDEE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.12075070040537,56.2712433727159
+-2.98647708050388,56.4503497727745</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>GRANTHAM - PETERBOROUGH</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.64092361498438,52.9036052752164
+-0.248295800076136,52.5721744409554</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>STRATFORD LONDON GP - TOTTENHAM HALE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.00273806485052959,51.5381583521958
+-0.0583956949249829,51.5858343313731</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>GRANTHAM - SLEAFORD</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.64092361498438,52.9036052752164
+-0.408661580477448,52.9924033599123</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>INVERKEITHING GROUP - EDINBURGH GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.39468834148053,56.0320609246806
+-3.1867201601368,55.9497469450646</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>YORK - SELBY</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.09164414482499,53.9549944344078
+-1.06202765621019,53.7804012865994</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>PERTH - AVIEMORE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-3.43853486400658,56.3902039890477
+-3.82682091769454,57.1869447311107</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DONCASTER - RETFORD</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.13871721870229,53.5185314624258
+-0.946208578834308,53.3129622458949</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>INVERNESS - DINGWALL</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-4.22168553197048,57.4781575680485
+-4.42110081313562,57.592267576863</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NEWARK GROUP - LINCOLN</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.798130010834015,53.0796689798256
+-0.539408227391042,53.2241839046206</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>LONDON GROUP - HACKNEY DOWNS</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-0.133035511350118,51.5259228426492
+-0.0586375574298068,51.546287887249</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>ABERDEEN - DUNDEE</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-2.09584835709385,57.1408810902915
+-2.98647708050388,56.4503497727745</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NEWTON LANARK - MOTHERWELL GROUP</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-4.13242975572459,55.8165428999123
+-3.99374336471782,55.7892042237234</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>MIDDLESBROUGH GROUP - NORTHALLERTON</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.2310576583881,54.5761261486276
+-1.44020006264227,54.3301128769982</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>DARLINGTON - NORTHALLERTON</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.54578731766567,54.5174993504893
+-1.44020006264227,54.3301128769982</coordinates>
+         </LineString>
+      </Placemark>
+      <Placemark>
+         <name>NEWCASTLE - DURHAM</name>
+         <styleUrl>#linkStyle</styleUrl>
+         <LineString>
+            <coordinates>-1.61572906780496,54.9653249022215
+-1.58020598133438,54.7764673142649</coordinates>
+         </LineString>
+      </Placemark>
+   </Document>
+</kml>

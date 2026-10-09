@@ -10,8 +10,13 @@
 
 class FileProcessingError(Exception):
 
-    def __init__(self, message: str) -> None:
+    def __init__(
+        self,
+        message: str,
+        file_id: str | None = None,
+    ) -> None:
         self.message = message
+        self.file_id = file_id
         super().__init__(message)
         
 
@@ -21,5 +26,4 @@ class MissingCRSError(FileProcessingError):
 
 class UnsupportedFileError(FileProcessingError):
     """Raised when an uploaded file or archive is not supported."""       
-
 

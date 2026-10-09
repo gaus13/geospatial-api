@@ -7,6 +7,16 @@ import geopandas as gpd
 import pytest
 from shapely.geometry import Polygon
 
+from collections.abc import Generator
+
+from fastapi.testclient import TestClient
+from sqlalchemy import create_engine, text
+from sqlalchemy.orm import Session, sessionmaker
+
+from app.config import settings
+from app.db import Base, get_db
+from app.main import app
+
 
 @pytest.fixture
 def sample_kml_path(tmp_path: Path) -> Path:
@@ -95,3 +105,50 @@ def sample_shapefile_zip(tmp_path: Path) -> Path:
             )
 
     return zip_path
+
+
+@pytest.fixture
+def test_database() -> Generator[Session, None, None]:
+    """Provide a clean PostgreSQL/PostGIS test database session."""
+
+    engine = create_engine(settings.test_database_url)
+
+    with engine.begin() as connection:
+        connection.execute(text("CREATE EXTENSION IF NOT EXISTS postgis"))
+
+    Base.metadata.create_all(bind=engine)
+
+    test_session_factory = sessionmaker(
+        bind=engine,
+        autocommit=False,
+        autoflush=False,
+    )
+
+    database = test_session_factory()
+
+    try:
+        yield database
+    finally:
+        database.close()
+        Base.metadata.drop_all(bind=engine)
+        engine.dispose()
+
+
+@pytest.fixture
+def client(
+    test_database: Session,
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> Generator[TestClient, None, None]:
+    """Provide an API client connected to the isolated test database."""
+
+    def override_get_db() -> Generator[Session, None, None]:
+        yield test_database
+
+    app.dependency_overrides[get_db] = override_get_db
+    monkeypatch.setattr(settings, "upload_dir", tmp_path / "uploads")
+
+    with TestClient(app) as test_client:
+        yield test_client
+
+    app.dependency_overrides.clear()

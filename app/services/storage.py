@@ -45,22 +45,21 @@ async def save_upload(upload: UploadFile, file_id: UUID) -> Path:
         with destination.open("wb") as output_file:
             while chunk := await upload.read(1024*1024):
                 total_bytes += len(chunk)
-
-            if total_bytes > maximum_bytes:
-                destination.unlink(missing_ok=True)
-                raise FileProcessingError(
-                    f"File is too large. Maximum size is "
-                    f"{settings.max_upload_mb} MB"
-                )  
-              
                 output_file.write(chunk)
 
     finally:
         await upload.close()
 
+    if total_bytes > maximum_bytes:
+        destination.unlink(missing_ok=True)
+        raise FileProcessingError(
+            f"File is too large. Maximum size is "
+            f"{settings.max_upload_mb} MB"
+        )
+
     if total_bytes == 0:
         destination.unlink(missing_ok=True)
-        raise FileProcessingError("Uploaded file is empty")            
+        raise FileProcessingError("Uploaded file is empty.")
 
     return destination
 

@@ -36,6 +36,9 @@ class FeatureMeasurementResponse(BaseModel):
     unit: str | None = None
     message: str | None = None    
 
+    model_config = ConfigDict(from_attributes=True)
+
+
 class MeasurementsResponse(BaseModel):
     """Response containing all measurements for one uploaded file."""
 
