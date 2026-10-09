@@ -1,6 +1,7 @@
 """Tests for CRS-aware geometry measurements."""
 
 from math import isclose
+from math import nan
 
 import geopandas as gpd
 import pytest
@@ -153,6 +154,34 @@ def test_invalid_polygon_is_measured_with_warning() -> None:
     assert feature.area is not None
     assert feature.message == (
         "Geometry is invalid; measurement may be unreliable."
+    )
+
+
+def test_non_finite_measurement_is_returned_as_unsupported() -> None:
+    """A non-finite area must not break JSON API serialization."""
+
+    polygon_with_non_finite_coordinate = Polygon(
+        [
+            (0, 0),
+            (1, 0),
+            (nan, nan),
+            (0, 0),
+        ]
+    )
+    gdf = gpd.GeoDataFrame(
+        geometry=[polygon_with_non_finite_coordinate],
+        crs="EPSG:4326",
+    )
+
+    result = compute_measurements(gdf)
+    feature = result.features[0]
+
+    assert feature.supported is False
+    assert feature.area is None
+    assert feature.unit is None
+    assert feature.message == (
+        "Area could not be calculated because the geometry "
+        "produced a non-finite measurement."
     )
 
 

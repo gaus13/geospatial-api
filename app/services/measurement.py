@@ -11,6 +11,7 @@
 from __future__ import annotations
 
 import json
+import math
 from dataclasses import dataclass
 from typing import Any
 
@@ -49,6 +50,14 @@ def _crs_label(crs: Any) -> str:
         return f"EPSG:{epsg}"
 
     return str(crs.name or crs)
+
+
+def _finite_measurement(value: float) -> float | None:
+    """Return a rounded measurement only when it is JSON-safe."""
+    if not math.isfinite(value):
+        return None
+
+    return round(value, 2)
 
 
 def compute_measurements(gdf: gpd.GeoDataFrame) -> MeasurementResult:
@@ -123,6 +132,15 @@ def compute_measurements(gdf: gpd.GeoDataFrame) -> MeasurementResult:
             warning = "Geometry is invalid; measurement may be unreliable."
 
         if geometry_type in {"Polygon", "MultiPolygon"}:
+            area = _finite_measurement(force_2d(metric_geometry).area)
+            area_message = warning
+
+            if area is None:
+                area_message = (
+                    "Area could not be calculated because the geometry "
+                    "produced a non-finite measurement."
+                )
+
             results.append(
                 FeatureResult(
                     index=index,
@@ -130,14 +148,23 @@ def compute_measurements(gdf: gpd.GeoDataFrame) -> MeasurementResult:
                     geometry=geometry_json,
                     crs=source_crs,
                     properties=properties,
-                    supported=True,
-                    area=round(force_2d(metric_geometry).area, 2),
-                    unit="square_meters",
-                    message=warning,
+                    supported=area is not None,
+                    area=area,
+                    unit="square_meters" if area is not None else None,
+                    message=area_message,
                 )
             )
 
         elif geometry_type in {"LineString", "MultiLineString"}:
+            length = _finite_measurement(force_2d(metric_geometry).length)
+            length_message = warning
+
+            if length is None:
+                length_message = (
+                    "Length could not be calculated because the geometry "
+                    "produced a non-finite measurement."
+                )
+
             results.append(
                 FeatureResult(
                     index=index,
@@ -145,10 +172,10 @@ def compute_measurements(gdf: gpd.GeoDataFrame) -> MeasurementResult:
                     geometry=geometry_json,
                     crs=source_crs,
                     properties=properties,
-                    supported=True,
-                    length=round(force_2d(metric_geometry).length, 2),
-                    unit="meters",
-                    message=warning,
+                    supported=length is not None,
+                    length=length,
+                    unit="meters" if length is not None else None,
+                    message=length_message,
                 )
             )    
 
