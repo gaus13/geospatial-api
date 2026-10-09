@@ -10,6 +10,14 @@ FastAPI service for uploading **KML files** and **zipped Shapefiles**, extractin
 - Git
 - Python 3.11+ for running tests locally
 
+## Sample files
+
+The `sample-data/` directory contains:
+
+- `sample-map.kml` — points and lines
+- `polygon-sample.kml` — Polygon and MultiPolygon examples
+- `nybb-polygon.zip` — zipped polygon Shapefile
+
 ### Start the complete application
 
 ```powershell
