@@ -54,6 +54,8 @@ docker compose down
 
 The database is exposed to the host on port `5433`. Inside Docker Compose, the API connects to the database using the hostname `db` and port `5432`.
 
+![Docker Compose services running](docs/screenshots/01-docker-services.png)
+
 ## Local development
 
 Docker is still required because the project uses PostgreSQL/PostGIS.
@@ -78,6 +80,8 @@ All endpoints use the `/api` base path. Full request and response schemas are av
 | `GET` | `/api/files/{file_id}/` | Retrieve file information and status |
 | `GET` | `/api/files/{file_id}/measurements/` | Retrieve per-feature measurements |
 
+![Interactive Swagger API documentation](docs/screenshots/02-swagger-endpoints.png)
+
 ### Upload example
 
 ```powershell
@@ -99,6 +103,8 @@ Successful uploads return `201 Created`:
 ```
 
 Use the returned ID with the two `GET` endpoints.
+
+![Successful polygon upload](docs/screenshots/03-polygon-upload.png)
 
 ### Measurement behavior
 
@@ -137,6 +143,8 @@ Use the returned ID with the two `GET` endpoints.
   ]
 }
 ```
+
+![Polygon and MultiPolygon measurement response](docs/screenshots/04-measurements.png)
 
 ### Error handling
 
@@ -209,6 +217,8 @@ Run the test suite with:
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
+![Passing automated test suite](docs/screenshots/05-test-results.png)
+
 Tests cover:
 
 - KML and zipped Shapefile uploads
@@ -223,21 +233,13 @@ Tests cover:
 
 ## Evidence for reviewers
 
-After running the project, capture these concise screenshots:
-
-1. `docker compose ps` showing the API and healthy database.
-2. Swagger UI showing the three API endpoints.
-3. Successful upload response with `COMPLETED` status.
-4. Measurements response showing `measurement_crs`, area, length, and point handling.
-5. Passing `pytest -q` output.
-
-Store optional screenshots in:
+The repository includes evidence screenshots captured from the running project in:
 
 ```text
 docs/screenshots/
 ```
 
-Do not include `.env` contents, passwords, or private machine paths.
+They demonstrate Docker services, the Swagger contract, a successful polygon upload, CRS-aware measurements, and the passing test suite. Do not add screenshots containing `.env` contents, passwords, or private machine paths.
 
 ## Learning and future scope
 
