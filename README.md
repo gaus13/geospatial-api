@@ -231,16 +231,6 @@ Tests cover:
 - Failed-record persistence and retrieval
 - PostgreSQL/PostGIS-backed API behavior
 
-## Evidence for reviewers
-
-The repository includes evidence screenshots captured from the running project in:
-
-```text
-docs/screenshots/
-```
-
-They demonstrate Docker services, the Swagger contract, a successful polygon upload, CRS-aware measurements, and the passing test suite. Do not add screenshots containing `.env` contents, passwords, or private machine paths.
-
 ## Learning and future scope
 
 This project provided practical experience with FastAPI, multipart uploads, GeoPandas, Shapely, CRS transformations, PostGIS, Docker Compose, layered architecture, and API testing.
