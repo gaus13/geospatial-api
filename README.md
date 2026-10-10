@@ -23,9 +23,10 @@ The `sample-data/` directory contains:
 ```powershell
 git clone https://github.com/gaus13/geospatial-api.git
 cd geospatial-api
-Copy-Item .env.example .env
 docker compose up --build
 ```
+
+No manual `.env` configuration is required for this Docker workflow. Docker Compose provides the API and database settings automatically. The API container connects to PostgreSQL internally through `db:5432`.
 
 Docker Compose starts:
 
@@ -52,13 +53,21 @@ Stop the application:
 docker compose down
 ```
 
-The database is exposed to the host on port `5433`. Inside Docker Compose, the API connects to the database using the hostname `db` and port `5432`.
+The database is exposed to the host on port `5433` only for optional direct database access. Inside Docker Compose, the API connects to the database using the hostname `db` and port `5432`.
 
 ![Docker Compose services running](docs/screenshots/01-docker-services.png)
 
 ## Local development
 
-Docker is still required because the project uses PostgreSQL/PostGIS.
+Docker is still required because the project uses PostgreSQL/PostGIS. 
+
+If you run the FastAPI application directly on your machine instead of inside Docker, create a local `.env` file from the safe example template:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+The local configuration uses `localhost:5433`, which is the host port mapped to the PostgreSQL container. The `.env` file is intended for local use and should not be committed.
 
 ```powershell
 py -3.12 -m venv .venv
@@ -230,9 +239,3 @@ Tests cover:
 - ZIP path traversal
 - Failed-record persistence and retrieval
 - PostgreSQL/PostGIS-backed API behavior
-
-## Learning and future scope
-
-This project provided practical experience with FastAPI, multipart uploads, GeoPandas, Shapely, CRS transformations, PostGIS, Docker Compose, layered architecture, and API testing.
-
-Possible future improvements include background processing for large files, authentication, pagination, Alembic migrations, additional formats such as GeoJSON, spatial filtering, and production observability.
