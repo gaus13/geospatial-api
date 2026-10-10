@@ -79,6 +79,27 @@ python -m uvicorn app.main:app --reload
 
 The local API is available at `http://127.0.0.1:8000`.
 
+## System design
+
+The API follows a focused processing pipeline:
+
+<!-- mermaid-checked: no \n, no em-dash/en-dash, no {} in labels, subgraphs are id["label"], arrows are -->|"label"|, all subgraphs closed by end, ids unique -->
+```mermaid
+flowchart LR
+    Upload["HTTP upload"] --> Validate["Validate and store"]
+    Validate --> Parse["Parse KML or Shapefile"]
+    Parse --> Measure["Project CRS and measure"]
+    Measure --> Persist[("PostgreSQL and PostGIS")]
+    Persist --> Response["Typed API response"]
+```
+
+The detailed Mermaid architecture diagrams and component inventory are available in [`architecture-diagram.md`](.github/modernize/assessment/engines/facts/architecture-diagram.md). The main design principles are:
+
+- **Thin API layer:** routes handle HTTP concerns while services own processing behavior.
+- **Geospatial correctness:** geographic coordinates are reprojected into a metric UTM CRS before measurement.
+- **Durable processing state:** successful and failed uploads are persisted with status and diagnostic metadata.
+- **Secure file handling:** uploads are streamed, isolated by UUID, size-limited, and extracted with ZIP traversal protection.
+
 ## API
 
 All endpoints use the `/api` base path. Full request and response schemas are available at `/docs`.
